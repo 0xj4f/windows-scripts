@@ -40,3 +40,20 @@
 | netsh      | Network command to view or modify network configurations. Example: netsh wlan show profile to show saved WiFi profiles.                                                                       |
 
 
+**PowerShell**
+
+| Unix/Linux Command | PowerShell Command           | Description with Example                                                                                           |
+|--------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| ls                 | Get-ChildItem                | Lists all files and directories in the current directory. Example: Get-ChildItem                                   |
+| cd                 | Set-Location                 | Changes the current directory. Example: Set-Location C:\Windows                                                    |
+| cp                 | Copy-Item                    | Copies a file. Example: Copy-Item source.txt destination.txt                                                       |
+| mkdir              | New-Item -ItemType Directory | Creates a new directory. Example: New-Item -ItemType Directory -Path new_directory                                 |
+| grep               | Select-String                | Searches for patterns in files. Example: `Get-Content file.txt                                                     |
+| find               | Get-ChildItem -Recurse       | Searches for a file or a directory. Example: Get-ChildItem -Path C:\ -Recurse -Filter example.txt                  |
+| touch              | New-Item -ItemType File      | Creates a new empty file. Example: New-Item -ItemType File -Name example.txt                                       |
+| echo               | Write-Output                 | Displays a line of text. Example: Write-Output "Hello, world!"                                                     |
+| rm                 | Remove-Item                  | Deletes a file. Example: Remove-Item example.txt                                                                   |
+| mv                 | Move-Item                    | Moves a file to a new location or renames a file. Example: Move-Item old.txt new.txt                               |
+| wget/curl          | Invoke-WebRequest            | Downloads files from the internet. Example: Invoke-WebRequest -Uri http://example.com/file.txt -OutFile output.txt |
+
+
