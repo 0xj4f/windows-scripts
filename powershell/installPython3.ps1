@@ -3,6 +3,7 @@ param(
 )
 
 # MAKE SURE TO HAVE THE RIGHT PRIVILEGE
+# Set-ExecutionPolicy RemoteSigned
 
 # Define the filename and URL based on the version
 $PythonInstallerName = "python-$PythonVersion-amd64.exe"
