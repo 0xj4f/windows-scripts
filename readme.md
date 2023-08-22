@@ -99,4 +99,7 @@ The following options are available:
 More help can be found at: https://aka.ms/winget-command-help
 ```
 
+### References:
+- https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/deployment/install-winget-windows-iot
+- https://pureinfotech.com/install-winget-windows-11/
 
