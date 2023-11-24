@@ -26,3 +26,7 @@ $Task = New-ScheduledTask -Action $Action -Principal $Principal -Trigger $Trigge
 Register-ScheduledTask -TaskName "SetTimeZone" -InputObject $Task
 
 ```
+
+
+## References 
+- https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.4&viewFallbackFrom=powershell-7
