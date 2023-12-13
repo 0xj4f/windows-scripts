@@ -52,6 +52,11 @@ netstat -an | findstr 8888
 
 ```
 
+**set windows defender private network off**
+```
+netsh advfirewall set privateprofile state off
+
+```
 
 ## References 
 - https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.4&viewFallbackFrom=powershell-7
