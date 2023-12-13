@@ -32,6 +32,16 @@ Register-ScheduledTask -TaskName "SetTimeZone" -InputObject $Task
 
 ```
 
+## FIREWALLS
+
+```ps1
+New-NetFirewallRule -Name AllowPort8888 -DisplayName "Allow Incoming Connections on Port 8888" -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 8888
+```
+
+```cmd
+netsh advfirewall firewall add rule name="AllowPort8888" dir=in action=allow protocol=TCP localport=8888
+```
+
 
 ## References 
 - https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.4&viewFallbackFrom=powershell-7
