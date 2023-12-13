@@ -37,11 +37,19 @@ Register-ScheduledTask -TaskName "SetTimeZone" -InputObject $Task
 ```ps1
 New-NetFirewallRule -Name AllowPort8888 -DisplayName "Allow Incoming Connections on Port 8888" -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 8888
 Set-NetFirewallRule -Name AllowPort8888 -Profile Any
-
 ```
 
 ```cmd
 netsh advfirewall firewall add rule name="AllowPort8888" dir=in action=allow protocol=TCP localport=8888
+```
+
+To Double Check it
+```
+netstat -an | findstr 8888
+  TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+  TCP    [::]:8888              [::]:0                 LISTENING
+
 ```
 
 
