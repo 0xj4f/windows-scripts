@@ -55,7 +55,11 @@ netstat -an | findstr 8888
 **set windows defender private network off**
 ```
 netsh advfirewall set privateprofile state off
+netsh advfirewall set publicprofile state on
 
+# double check
+netsh advfirewall show publicprofile
+netsh advfirewall show privateprofile
 ```
 
 ## References 
