@@ -36,6 +36,8 @@ Register-ScheduledTask -TaskName "SetTimeZone" -InputObject $Task
 
 ```ps1
 New-NetFirewallRule -Name AllowPort8888 -DisplayName "Allow Incoming Connections on Port 8888" -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 8888
+Set-NetFirewallRule -Name AllowPort8888 -Profile Any
+
 ```
 
 ```cmd
