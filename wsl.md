@@ -14,6 +14,16 @@ access windows from linux
 cd /mnt/c/Users/<yourname>
 ```
 
+install USB system
+```cmd
+winget install --interactive --exact dorssel.usbipd-win
+```
+on the ubuntu (WSL)
+```bash
+sudo apt install linux-tools-generic hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20
+```
+
 ## Timezone Not Synced
 
 To synchronize the WSL 2 clock with the host system after a time zone change, you need to shut down all WSL 2 sessions and then restart. This can be done using the `wsl --shutdown` command.
